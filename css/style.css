@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(92, 3, 77, 0.795);
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main .content {
+    background-color: white;
+    width: 750px;
+    padding: 20px;
+}
+    
+
+
+
+ 
+header .imagen {
+    display: flex;
+    justify-content: center;
+}
+header .imagen img  {
+    width: 750px;
+    height: 300px;
+}
+
+main h2  {
+    padding-top: 30px;
+    
+}
+
+main .parrafo {
+    padding-top: 15px;
+    
+    font-size: 20px;
+}
+
+main .parrafofinal {
+    padding-top: 15px;
+    padding-left: 49%;
+    font-size: 20px;
+}
+
+
+.lista  {
+    padding-top: 20px;
+    padding-left: 10%;
+    font-size: 20px ;
+}
+
+footer .imgfooter {
+    display: flex;
+    justify-content: center;
+}
+
+footer .imgfooter img {
+    width: 750px;
+
+}
+
+@media (max-width: 768px) {
+    main .content {
+        width: 100%; /* Cambiar el ancho a 100% */
+        max-width: none; /* Eliminar el ancho máximo */
+        padding: 20px;
+    }
+
+    header .imagen img,
+    footer .imgfooter img {
+        width: 100%; /* Ajustar el ancho de las imágenes al 100% de la pantalla */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+
+    main .imagen img {
+        max-width: 100%; /* Ajustar el ancho máximo de la imagen al 100% */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+
+    main h2,
+    main .parrafo,
+    main .parrafofinal,
+    .lista {
+        font-size: 18px; /* Reducir el tamaño de la fuente */
+    }
+}
+
+
+
+
+@media ( max-width: 425px){
+    main .content {
+        width: 100%; /* Establece el ancho al 100% para ocupar todo el espacio disponible */
+        padding: 20px 10px; /* Ajusta el padding superior e inferior a 20px y el padding izquierdo y derecho a 10px */
+    }
+
+    main .parrafofinal {
+        padding-left: 0; /* Elimina el padding izquierdo */
+        text-align: center; /* Centra el texto */
+    }
+
+    .lista {
+        padding-left: 0; /* Elimina el padding izquierdo */
+    }
+
+    header .imagen img,
+    footer .imgfooter img {
+        max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100% */
+    }
+}
+
+@media (max-width: 375px) {
+    main .content {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    main .parrafofinal {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .lista {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    main .content {
+        width: 100%;
+        padding: 20px 10px;
+    }
+}
